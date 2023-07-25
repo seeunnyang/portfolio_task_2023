@@ -1,0 +1,16 @@
+.portfolio {background: url(../images/7598163.jpg) no-repeat fixed center;
+background-size: cover;}
+.top {
+    background: lightblue;
+    width: 1400px; margin: 0 auto; 
+    display: flex; flex-flow: column nowrap; align-items: center; justify-content: center;
+}
+/* .top .photo {border: 5px solid #fff; border-radius: 50%; } */
+.top .photo img {width: 100px; height: 100px;}
+.top h1 {}
+.top p {}
+.top .follow {}
+.top .follow .contents {}
+.top .follow .icon {}
+.top .follow .icon a {}
+.top .follow .icon a img {width: 20px; height: 20px;}
