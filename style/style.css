@@ -13,16 +13,16 @@ background-size: cover;}
 }
 .portfolio .top .photo img {width:100%;}
 .portfolio .top h1 {
-    /* font-family: 'Galada', cursive; */
+    font-family: 'Galada', cursive;
     /* font-family: 'Sofia', cursive; */
-    font-family: 'Caprasimo', cursive;
-    font-size: 2rem; font-weight: 500;
+    /* font-family: 'Caprasimo', cursive; */
+    font-size: 2rem; font-weight: 600;
     letter-spacing: -0.02em; margin-bottom: 20px;
-    background: linear-gradient(to right, lightcoral, lightblue, lightcoral);
+    background: linear-gradient(to right, #ff00ff, #00ffff, #ff00ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 400%;
-    animation: text_bg 5s linear alternate infinite;
+    animation: text_bg 5s linear infinite;
 }
 .portfolio .top .loading {
     background: #fff;  margin-bottom: 30px;
@@ -33,7 +33,7 @@ background-size: cover;}
     display: block;
     width: 300px;
     height: 10px;
-    background: lightcoral;
+    background: #ff00ff;
     transform: scaleX(0);
     transition: transform 3s;
     transform-origin: left top;
@@ -48,9 +48,23 @@ background-size: cover;}
 .portfolio .top .icon {
     display:flex; flex-flow:row nowrap; justify-content: center;
 }
-.portfolio .top .icon a {margin-right: 25px;}
+.portfolio .top .icon a {margin-right: 25px; position: relative;}
 .portfolio .top .icon a:last-child {margin-right: 0;}
 .portfolio .top .icon a img {width: 25px; height: 25px;}
+.portfolio .top .icon a span {
+    font-family: 'Galada', cursive;
+    position: absolute;
+    background: #222;
+    color: #fff;
+    padding: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 35px;
+    opacity: 0;
+}
+.portfolio .top .icon a:nth-child(1):hover span {opacity: 1;}
+.portfolio .top .icon a:nth-child(2):hover span {opacity: 1;}
+.portfolio .top .icon a:nth-child(3):hover span {opacity: 1;}
 /* .m_nav */
 .portfolio .m_nav {
     width:30px; height:25px; margin: 100px auto; 
